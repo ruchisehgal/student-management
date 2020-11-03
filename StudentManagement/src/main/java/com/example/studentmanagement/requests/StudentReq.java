@@ -1,20 +1,14 @@
-package com.example.studentmanagement.entity;
+package com.example.studentmanagement.requests;
 
-import javax.persistence.Entity;
+import java.io.Serializable;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-//TODO: add Lombok @Data @NoArgsCons @AllArgsConst after Lombok issue is resolved
-
 /*
- * This class represents the Student Entity that we would be querying to perform 
- * various student management activities
- * It extends the AuditFields class for auditing purpose ie to
- * keep a track of changes made.
+ * This class represents the Student Request/Response object to /from the UI
  */
-
-@Entity
-public class StudentEntity extends AuditFields{
+public class StudentReq implements Serializable {
 
 	@Id
 	@GeneratedValue
@@ -40,11 +34,11 @@ public class StudentEntity extends AuditFields{
 	 * Adding Getters,Setters,NO args and All args due to lombok issue
 	 * TO BE REMOVED
 	 */
-	public StudentEntity() {
+	public StudentReq() {
 	}
 
 
-	public StudentEntity(Long studentId, String studentNumber, String studentName, String studentCourse,
+	public StudentReq(Long studentId, String studentNumber, String studentName, String studentCourse,
 			String studentEmail, String studentAddress) {
 		super();
 		this.studentId = studentId;
@@ -115,15 +109,4 @@ public class StudentEntity extends AuditFields{
 		this.studentAddress = studentAddress;
 	}
 
-
-	@Override
-	public String toString() {
-		return "StudentEntity [studentId=" + studentId + ", studentNumber=" + studentNumber + ", studentName="
-				+ studentName + ", studentCourse=" + studentCourse + ", studentEmail=" + studentEmail
-				+ ", studentAddress=" + studentAddress + "]";
-	}
-
-
-	
-	
 }
