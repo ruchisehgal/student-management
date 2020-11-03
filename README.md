@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## Welcome to Student Management Project
 
-You can use the [editor on GitHub](https://github.com/ruchisehgal/student-management/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This application is build to manage student details.The end-user like office administrator will have the features like
+- Adding a new student
+- Listing the details of all students
+- Adding list ofn students participating in same event ex seminars or other virtual events.
+- Viewing Details of a particular student.
+- Removing a student from the database
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Tech -Stack used
 
-### Markdown
+Below is a description of tech-stack that would be used for developing this project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+For Front-end and Backend
 
-# Header 1
-## Header 2
-### Header 3
+# Front end
+1. _Angular 8_
+2. _Bootstrap 4_
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ruchisehgal/student-management/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Back end
+1. _Java 8_
+2. _Spring Boot 2.x_
+3. _Restful Web Services_
+4. _H2 DB_
+5. _Mockito Framework_
+6. _JUnit 5_
