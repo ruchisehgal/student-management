@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Random;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,6 +70,7 @@ public class StudentManagementServiceImpl implements StudentManagementService {
 	public StudentReq addStudentDetails(StudentReq studentRequest, Map<String, String> adminDetails) {
 		StudentEntity studentEntityDbSave = new StudentEntity();
 		StudentReq sReq = new StudentReq();
+		studentRequest.setStudentId(new Random().nextLong());
 		if(studentRequest != null && studentRequest.getStudentId() != null) {
 			BeanUtils.copyProperties(studentRequest, studentEntityDbSave);
 		}
