@@ -74,6 +74,7 @@ public class StudentManagementServiceImpl implements StudentManagementService {
 		if(studentRequest != null && studentRequest.getStudentId() != null) {
 			BeanUtils.copyProperties(studentRequest, studentEntityDbSave);
 		}
+		studentEntityDbSave.setStudentNumber(studentEntityDbSave.getStudentName()+ " "+ Math.random());
 		studentEntityDbSave.setCreatedByUser(adminDetails.get("admin"));
 		studentEntityDbSave.setCreatedDate(LocalDateTime.now());
 		StudentEntity stEnt  = studentRep.save(studentEntityDbSave);

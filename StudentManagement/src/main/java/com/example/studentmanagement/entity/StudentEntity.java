@@ -14,12 +14,11 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class StudentEntity extends AuditFields{
+public class StudentEntity extends AuditFields{	
 
 	@Id
 	@GeneratedValue
 	private Long studentId;
-	
 	
 	private String studentNumber;
 	
